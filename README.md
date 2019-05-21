@@ -34,3 +34,7 @@ A simple web application to help you connect with your friends--find and learn m
 
 ### Travel to top
 - Click the **Top** button at the bottom right corner to travel back to top of the page
+
+## Website Display
+ [GitHub page](https://smallpaes.github.io/social-page-v2/)
+ ![image](https://drive.google.com/uc?export=view&id=1Yh8JLCO9sao79AQ3P1Svq7kwbCD0YQcp)
