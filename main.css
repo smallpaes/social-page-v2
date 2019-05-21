@@ -1,0 +1,249 @@
+/*Initialization*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/*Filter Section*/
+#filter {
+  font-size: 16px;
+  display: none;
+  background: RGBA(144,144,144,0.75);
+  position: fixed;
+  top: 68px;
+  left: 18%;
+  z-index: 999;
+  padding: 1em;
+  width: 13em;
+}
+
+#filter .filter-title{
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#filter .form-control {
+  width: 100%;
+  color: #505050;
+  font-weight: 500;
+}
+
+#filter label {
+  font-weight: 500;
+}
+
+/*Navbar Section*/
+#navbar-group {
+  font-size: 16px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+i.fa-handshake {
+  font-size: 2em;
+}
+
+
+#nav-search .form-control {
+  width: 32%;
+  flex: 0 1 auto;
+  background: RGBA(52,58,64,0.45);
+}
+
+#nav-search .form-control:focus {
+  flex: 1;
+  color: white;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  border-color: #e9ecef;
+  box-shadow: none;
+}
+
+/*Banner Section*/
+.cover-photo {
+  width: 100%;
+  height: 310px;
+  background-image: url("https://images.pexels.com/photos/296881/pexels-photo-296881.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-title {
+  font-size: 16px;
+}
+
+.banner-title h2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-shadow: 2px 2px #505050;
+  font-size: 3em;
+}
+
+/*Data Panel Section: General*/
+#data-panel figure {
+  overflow: hidden;
+}
+
+#data-panel img.card-img-top {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#data-panel img.card-img-top:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#data-panel i.fa-heart {
+  cursor: pointer;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.gray-heart {
+  color: #c0c0c0;
+}
+
+/*Data Panel Section: Favorite*/
+#data-panel i.fa-heart:hover,
+.red-heart {
+  color: #c80000;
+  text-shadow: 2px 2px #e0e0e0;
+}
+
+#empty-message {
+  margin: 3em auto 0 auto;
+  font-size: 16px;
+  color: #b0b0b0;
+  text-shadow: 1px 1px #888888;
+}
+
+#empty-message h1 {
+  font-size: 4em;
+}
+
+#empty-message h3 {
+  font-size: 1.8em;
+}
+
+#empty-message .fa-handshake {
+  font-size: 1.2em;
+}
+
+/*Modal Section*/
+#profile-detail-info {
+  font-size: 16px;
+}
+
+#profile-detail-info h1 {
+  font-size: 1.9em;
+}
+
+#profile-detail-info p {
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+#profile-detail-info ul {
+  position: absolute;
+  top: 28px;
+  right: 25px;
+}
+
+#profile-detail-flag {
+  width: 2.5em;
+  height: auto;
+}
+
+#profile-detail-gender {
+  background: #e8e8e8;
+}
+
+/*To top button*/
+#to-top-btn {
+  bottom: 3%;
+  right: 2%;
+}
+
+/*Large Devices*/
+@media screen and (min-width: 992px) {
+  /*Filter Section*/
+  #filter {
+    font-size: 18px;
+  }
+  
+  /*Banner Section*/
+  .cover-photo {
+    height: 400px;
+  }
+  
+  .banner-title {
+    font-size: 20px;
+  }
+  
+  .banner-title h2 {
+    bottom: 1em;
+  }
+
+  /*Modal Section*/
+  #profile-detail-info {
+    font-size: 19px;
+  }
+
+/*Extra Large Devices*/
+@media screen and (min-width: 1200px) {
+  /*Filter Section*/
+  #filter {
+    font-size: 19px;
+    width: 15em;
+  }
+  
+  /*Banner Section*/
+  .cover-photo {
+    height: 550px;
+  }
+  
+  .banner-title h2 {
+    bottom: 2em;
+  }
+  
+  .banner-title {
+    font-size: 25px;
+  }
+}
